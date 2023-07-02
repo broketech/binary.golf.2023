@@ -1,7 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><script>
   let d = new XMLSerializer().serializeToString(document);
   let t = document.createElement("a");
-  t.setAttribute('href', 'data:charset=utf-8,'+ d);
-  t.setAttribute('download', 4);
+  t.setAttribute('href', 'data:xml/plain;charset=utf-8,'+ d);
+  t.setAttribute('download', '4');
+  t.setAttribute('fileExtension', '.')
   t.click();
 </script></head></html>
